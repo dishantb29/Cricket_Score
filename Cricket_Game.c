@@ -14,13 +14,22 @@ int win()
     }
     else
         return -1;
+     if(player_Score>AI_Score)
+    {
+        return 1;
+    }
+    else if(Remaining_Players = 5)
+    {
+        return 1;
+    }
+    else return 0;
 }
 int AI_Score_Board(int RunI,int WicketI)
 {
     int Score_Run,Score_Wicket;
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd SCORE BOARD xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd");
+    printf("*******************************************\n");
+    printf("@@@@@@@@@@@@ SCORE BOARD @@@@@@@@@@@@@@@@@@\n");
+    printf("*********************************************");
     printf("\n");
     printf("RUN:%d\t\t",Score_Run);
     printf("WICKET:%d\t\n",Score_Wicket);
@@ -28,9 +37,11 @@ int AI_Score_Board(int RunI,int WicketI)
 int Player_Score_Board(int RunP,int WicketP)
 {
     int Score_Run,Score_Wicket,Remaining_Runs;
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd SCORE BOARD xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd");
+     int Score_Run +=Run_p,Score_Wicket=Wicket_p,Remaining_Runs;
+    Remaining_Runs =PLAYER_SCORE-Remaining_Runs
+    printf("********************************************\n");
+    printf("********************************************\n");
+    printf("**********************************************");
     printf("\n");
     printf("RUN:%d\t\t",Score_Run);
     printf("WICKET:%d\t\n",Score_Wicket);
