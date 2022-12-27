@@ -57,14 +57,38 @@ int main()
 {
     int AI_Wicket[10]={1,5,3,7,4};
     int AI_SCORE[10]={24,20,15,6,8,12,6,11,9};
-    time_t t;
-    int Runs[10]={0,1,2,4,6},AI_SCORE,PLAYER_SCORE;
+    time_t t,t3;
+    int TURN=0;
+    int Runs[10]={0,1,2,4,6},PLAYER_SCORE=0;
     char out[20]={"RunOut","BOLD","Catch"};
-    int RI,OI,hit;
+    int PR,PO,hit,Wicket;
+    int RI,OI,win=-1,Remaining_Player=4;
     srand((unsigned)time(&t));
     RI = rand()%10;
     OI = rand()%6;
-    Score_Board(AI_SCORE[RI],AI_Wicket[OI]);
+    AI_Score_Board(AI_SCORE[RI],AI_Wicket[OI]);
+    do
+    {
+        srand((unsigned)time(&t3));
+        hit = rand()%2;
+        if (hit == 0)
+        {
+            PO = rand()%4;
+            Wicket = out[PO];
+            Remaining_Player-=1;
+        }
+        else
+        {
+            PR = rand()%6;
+            int RUNS= Runs[PR];
+            PLAYER_SCORE += RUNS;
+        }
+        TURN++;
+        Player_Score_Board(PLAYER_SCORE,Wicket,Remaining_Player);
+        Win_Status(AI_SCORE,PLAYER_SCORE,Remaining_Player,TURN);
+    } while (win = -1);
+    
+    Player_Score_Board();
     
     return 0;
 }
