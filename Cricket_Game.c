@@ -28,10 +28,13 @@ int AI_Score_Board(int RunI,int WicketI)
 int Player_Score_Board(int RunP,int WicketP)
 {
     int Score_Run,Score_Wicket,Remaining_Runs;
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd SCORE BOARD xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd");
+    printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+    printf("@@@@@@@@@@@@ SCORE BOARD @@@@@@@@@@@@@@@@@@@\n");
+    printf("@@@@@@@@@@@@@@@@$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$");
     printf("\n");
+    Printf("Score_Run");
+    Printf("\tScore_Wicket");
+    Printf("\tRemaining_Runs");
     printf("RUN:%d\t\t",Score_Run);
     printf("WICKET:%d\t\n",Score_Wicket);
     printf("REMAINING RUNS:%d",Remaining_Runs);
@@ -59,8 +62,8 @@ int main()
     int AI_SCORE[10]={24,20,15,6,8,12,6,11,9};
     time_t t,t3;
     int TURN=0;
-    int Runs[10]={0,1,2,4,6},PLAYER_SCORE=0;
-    char out[20]={"RunOut","BOLD","Catch"},Player_Status;
+    int Runs[10]={0,1,2,3,4,6},PLAYER_SCORE=0;
+    char out[20]={"RunOut","BOLD","Catch","LBW"},Player_Status;
     int PR,PO,hit;
     int RI,OI,win=-1,Remaining_Player=4;
     srand((unsigned)time(&t));
