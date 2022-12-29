@@ -25,13 +25,16 @@ int AI_Score_Board(int RunI,int WicketI)
     printf("RUN:%d\t\t",Score_Run);
     printf("WICKET:%d\t\n",Score_Wicket);
 }
-int Player_Score_Board(int RunP,int WicketP)
+int Player_Score_Board(int RunP,int WicketP,int Remaining_RunsP)
 {
     int Score_Run,Score_Wicket,Remaining_Runs;
     printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd\n");
     printf("/xcd/xcd/xcd SCORE BOARD xcd/xcd/xcd/xcd/xcd\n");
     printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd");
     printf("\n");
+    Printf("Score_Run");
+    Printf("Score_Wicket");
+    Printf("Remaining_Run");
     printf("RUN:%d\t\t",Score_Run);
     printf("WICKET:%d\t\n",Score_Wicket);
     printf("REMAINING RUNS:%d",Remaining_Runs);
