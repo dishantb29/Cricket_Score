@@ -17,7 +17,8 @@ int win()
 }
 int AI_Score_Board(int RunI,int WicketI)
 {
-    int Score_Run,Score_Wicket;
+    int Score_Run=RunI;
+    int Score_Wicket=WicketI;
     printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd\n");
     printf("/xcd/xcd/xcd SCORE BOARD xcd/xcd/xcd/xcd/xcd\n");
     printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd");
@@ -25,16 +26,18 @@ int AI_Score_Board(int RunI,int WicketI)
     printf("RUN:%d\t\t",Score_Run);
     printf("WICKET:%d\t\n",Score_Wicket);
 }
-int Player_Score_Board(int RunP,int WicketP)
+int Player_Score_Board(int RunP,int WicketP,int Remaining_Runp)
 {
-    int Score_Run,Score_Wicket,Remaining_Runs;
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd SCORE BOARD xcd/xcd/xcd/xcd/xcd\n");
-    printf("/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd/xcd");
+    int Score_Run=Runp;
+    int Score_Wicket=Wicketp;
+    int ScoreRemaining_Run=Remaining Run-Player_Score;
+    printf("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\n");
+    printf("@@@@@@@@@@@@ SCORE BOARD @@@@@@@@@@@@@@@@@@@\n");
+    printf("########№########№########№########№##########№######");
     printf("\n");
-    printf("RUN:%d\t\t",Score_Run);
+    printf("RUN:%d\t",Score_Run);
     printf("WICKET:%d\t\n",Score_Wicket);
-    printf("REMAINING RUNS:%d",Remaining_Runs);
+    printf("REMAINING RUNS:%d\t\n",Remaining_Runs);
 }
 int run()
 {
